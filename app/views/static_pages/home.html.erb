@@ -1,10 +1,16 @@
 <%provide(:title,"home")%> 
 
-  <body>
-    <h1>Sample App</h1>
-    <p>
-      This is the home page for the
-      <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-      sample application.
-    </p>
+<body>
+      <div class="center jumbotron">
+  <h1>Welcome to the Cit<sub>x</sub>Connect</h1>
 
+  <h2>
+    An internal social network of
+    <a href="http://www.cit.edu.in">Coimbatore Institute of Technology</a>
+  </h2>
+  <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rubyonrails.png", alt: "Rails logo"),
+'http://rubyonrails.org/'%>
+</body>
