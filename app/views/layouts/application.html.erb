@@ -6,6 +6,7 @@
   <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %> <!--(shim) for IE < 9.0  -->
 </head>
+    <%= render 'layouts/header' %>
   <body>
     <div class="container">
          <% flash.each do |message_type, message| %>
@@ -14,7 +15,6 @@
 
       <%= yield %>
         <%= render 'layouts/footer' %>
-        <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>
